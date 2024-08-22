@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div style="height: 100vh;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <input
+          data-email
+          type="text"
+          placeholder="Enter your email"
+          style="height: 30px; width: 80%;"
+          id="email"
+        />
+        <button style="height: 30px;" data-signup>Sign up</button>
+        <button style="height: 30px;" data-login>Login</button>
+      </div>
+      <dialog data-modal style="width: 300px;">
+        <button
+          data-close
+          style="font-size: 2rem; position: absolute; top: 5px; right: 10px;"
+        >
+          &times;
+        </button>
+        <div data-content></div>
+      </dialog>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
